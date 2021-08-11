@@ -9,7 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
 import com.azwarbahar.jamridexgojek.adapter.TabPagerAdapter
+import com.azwarbahar.jamridexgojek.fragment.MainChatFragment
+import com.azwarbahar.jamridexgojek.fragment.MainHomeFragment
 import com.azwarbahar.jamridexgojek.fragment.MainPromosFragment
+import com.azwarbahar.jamridexgojek.fragment.MainServicesFragment
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.main_tab_layout.view.*
@@ -35,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             this,
             arrayListOf(
                 MainPromosFragment(),
-//                MainHomeFragment(),
-//                MainChatFragment(),
+                MainHomeFragment(),
+                MainChatFragment(),
             )
         )
         pager.adapter = adapter
