@@ -28,6 +28,9 @@ class MainHomeFragment : Fragment() {
         imageList.add(SlideModel(R.drawable.img_slide1))
         imageList.add(SlideModel(R.drawable.img_slide2))
         imageList.add(SlideModel(R.drawable.img_slide3))
+        imageList.add(SlideModel(R.drawable.img_slide1))
+        imageList.add(SlideModel(R.drawable.img_slide2))
+        imageList.add(SlideModel(R.drawable.img_slide3))
 
         val imageSlider = rootView.findViewById<ImageSlider>(R.id.image_slider)
         imageSlider.setImageList(imageList)

@@ -21,6 +21,8 @@
 
     <color name="yellow_200">#FFAD00</color>
 
+    <color name="bachground">#63DBDA</color>
+
     <color name="colorGreyDecor">#E3ECF1</color>
     <color name="colorGreyBackground">#EDF2F2</color>
     <color name="colorGreyDecorDark">#B7BFC5</color>
