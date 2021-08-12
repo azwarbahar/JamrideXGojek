@@ -1,15 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:background="@color/white"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goclub"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_jamclub">
+
+            <TextView
+                android:id="@+id/tv_xp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="12dp"
+                android:text="999 XP"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_xp"
+                android:layout_alignRight="@id/tv_xp"
+                android:text="Sultan"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
-        android:layout_centerInParent="true"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:text="Fragment"
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goclub"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="22dp"
+        android:text="Promo menarik buat kamu"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="16sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_slide1" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/img1"
+        android:scaleType="fitXY"
+        android:layout_marginHorizontal="16sp"
+        android:src="@drawable/img_slide2" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/img2"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="16sp"
+        android:src="@drawable/img_slide3" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/img3"
+        android:layout_marginHorizontal="16sp"
+        android:src="@drawable/img_slide1" />
 
 </RelativeLayout>

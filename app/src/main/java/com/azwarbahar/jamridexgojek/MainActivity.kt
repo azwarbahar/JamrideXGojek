@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
+import androidx.constraintlayout.motion.widget.MotionLayout
 import com.azwarbahar.jamridexgojek.adapter.TabPagerAdapter
 import com.azwarbahar.jamridexgojek.fragment.MainChatFragment
 import com.azwarbahar.jamridexgojek.fragment.MainHomeFragment
@@ -46,13 +47,13 @@ class MainActivity : AppCompatActivity() {
         TabLayoutMediator(tab, pager) { tab, position ->
             when (position) {
                 0 -> {
-                    tab.customView = getTabLayout("Promos", R.drawable.ic_promos)
+                    tab.customView = getTabLayout("Promo", R.drawable.ic_promos)
                 }
                 1 -> {
                     tab.customView = getTabLayout("Home", R.drawable.ic_home)
                 }
                 2 -> {
-                    tab.customView = getTabLayout("Chats", R.drawable.ic_chat)
+                    tab.customView = getTabLayout("Chat", R.drawable.ic_chat)
                 }
             }
         }.attach()
@@ -62,6 +63,25 @@ class MainActivity : AppCompatActivity() {
             add(R.id.favoriteContainer, MainServicesFragment(), "")
             commit()
         }
+        motion.addTransitionListener(object : MotionLayout.TransitionListener {
+            override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) {
+            }
+
+            override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
+            }
+
+            override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {
+//                RxBus.getDefault().send(TransitionEvent(p3))
+                favoriteContainer.alpha = p3 * 4
+                favorites.alpha = 1 - (p3 * 4)
+            }
+
+            override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
+                if (p1 == R.id.mainStart) {
+                    favoriteContainer.alpha = 0f
+                }
+            }
+        })
     }
 
     override fun onPause() {

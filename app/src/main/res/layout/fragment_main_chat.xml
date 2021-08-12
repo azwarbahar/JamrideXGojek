@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/tv1"
+        android:textStyle="bold"
+        android:text="pilihan fitur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pesan"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_below="@id/tv1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/bg_icon"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_email_24"
+            android:layout_height="50dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:text="Pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bantuan"
+        android:layout_toRightOf="@+id/ll_pesan"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_below="@id/tv1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/bg_icon"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_live_help_24"
+            android:layout_height="50dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:text="Bantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/ll_bantuan"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_below="@id/tv1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/bg_icon"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_settings_applications_24"
+            android:layout_height="50dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:text="Pengaturan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/ll_pesan"
+        android:id="@+id/tv2"
+        android:textStyle="bold"
+        android:text="Chat Kamu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_chat1"
+        android:layout_below="@id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginHorizontal="12dp"
+            android:id="@+id/profile"
+            android:layout_marginTop="16dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/shp_circle_green700"
+            android:src="@drawable/photo_profil_circle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_alignTop="@id/profile"
+            android:layout_toRightOf="@id/profile"
+            android:text="Driver"
+            android:layout_marginHorizontal="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pesan"
+            android:layout_below="@id/tv_nama"
+            android:layout_toRightOf="@id/profile"
+            android:text="Halo, Sesuai Aplikasi ya"
+            android:layout_marginHorizontal="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/profile"
+            android:background="@color/white2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_chat2"
+        android:layout_below="@id/rl_chat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginHorizontal="12dp"
+            android:id="@+id/profile2"
+            android:layout_marginTop="16dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/shp_circle_green700"
+            android:src="@drawable/photo_profil_circle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama2"
+            android:layout_alignTop="@id/profile2"
+            android:layout_toRightOf="@id/profile2"
+            android:text="Driver"
+            android:layout_marginHorizontal="6dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pesan2"
+            android:layout_below="@id/tv_nama2"
+            android:layout_toRightOf="@id/profile2"
+            android:text="Halo, Sesuai Aplikasi ya"
+            android:layout_marginHorizontal="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/profile2"
+            android:background="@color/white2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

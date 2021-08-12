@@ -10,7 +10,7 @@ import com.azwarbahar.jamridexgojek.R
 class MainChatFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        val rootView = inflater.inflate(R.layout.fragment_main_promos, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_main_chat, container, false)
         return rootView
     }
 }

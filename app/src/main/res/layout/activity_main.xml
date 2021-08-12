@@ -43,7 +43,7 @@
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="2dp"
+        app:cardElevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <RelativeLayout
@@ -82,7 +82,7 @@
                             android:id="@+id/jamride"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/shp_circle_green700"
+                            android:background="@drawable/bg_icon"
                             android:padding="8dp"
                             android:src="@drawable/ic_goride" />
 
@@ -105,7 +105,7 @@
                             android:id="@+id/gocar"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/shp_circle_green700"
+                            android:background="@drawable/bg_icon"
                             android:padding="4dp"
                             android:src="@drawable/ic_gocar" />
 
@@ -128,7 +128,7 @@
                             android:id="@+id/gofood"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/shp_circle_red200"
+                            android:background="@drawable/bg_icon"
                             android:padding="8dp"
                             android:src="@drawable/ic_gofood" />
 
@@ -151,7 +151,7 @@
                             android:id="@+id/goshop"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/shp_circle_red200"
+                            android:background="@drawable/bg_icon"
                             android:padding="8dp"
                             android:src="@drawable/ic_goshop" />
 
